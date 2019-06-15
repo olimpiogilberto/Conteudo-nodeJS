@@ -1,4 +1,3 @@
-module.exports = function(){ return PagamentoDao; };
 
 function PagamentoDao(connection) {
     this._connection = connection;
@@ -15,3 +14,7 @@ PagamentoDao.prototype.lista = function(callback){
 PagamentoDao.prototype.buscaPorId = function(callback) {
     this._connection.query('select * from pagamentos where id = ' [id], callback);
 }
+
+module.exports = function(){
+    return PagamentoDao;
+};
