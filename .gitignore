@@ -1,2 +1,4 @@
+cardfast/node_modules/*
+cardfast/package-lock.json
 payfast/node_modules/*
 payfast/package-lock.json
