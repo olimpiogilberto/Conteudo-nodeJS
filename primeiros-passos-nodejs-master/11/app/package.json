@@ -16,7 +16,7 @@
     "knex": "^0.12.6",
     "method-override": "^2.3.7",
     "mongodb": "^2.2.36",
-    "mongoose": "^4.13.18",
+    "mongoose": "^5.7.5",
     "morgan": "~1.7.0",
     "mysql": "^2.13.0",
     "nunjucks": "^3.0.0",
