@@ -1,6 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+mongoose.connect('mongodb://localhost:27017/musics', {
+  useMongoClient: true,
+  connectTimeoutMS: 1000
+});
 
 router.get('/', (req, res, next) => {
   mongoose.model('Musica').find().then((musicas) => {
